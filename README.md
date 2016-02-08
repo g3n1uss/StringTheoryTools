@@ -10,6 +10,7 @@ Boosts, rotations, S duality and T duality for NS-NS fields are implemented in t
 
 
 TODO: 
+
 1. Add Sen-Hassan-Cvetic method using large matrices to perform a series of dualities in one rotation [arxiv:hep-th/9512127](http://arxiv.org/abs/hep-th/9512127)
 2. Implement duality rules for RR-fields
 3. Add more examples.
