@@ -28,3 +28,4 @@ I am not sure if there are any open source libs implemeting what I needed, but e
 1. Add Sen-Hassan-Cvetic method using large matrices to perform a series of dualities in one rotation [arxiv:hep-th/9512127](http://arxiv.org/abs/hep-th/9512127)
 2. Implement duality rules for RR-fields
 3. Add more examples.
+4. Add computation of spin connections and the corresponding example.
