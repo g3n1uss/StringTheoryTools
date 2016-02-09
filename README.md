@@ -10,7 +10,11 @@ A great example of utilizing T- S dualities and boosts is several solution-gener
 
 Boosts, rotations, S duality and T duality for NS-NS fields are implemented in the package TranformationRules.m. The example of using these transformations is presented in Example.KerrToD1.nb, in which you start with a rotating black hole in 4 dimensions and perform a series of tranformations (add flat direction-boost-T duality-S duality) to obtain D1 brane. As a check we take the extremal non-rotating limit to check that the result is the well-known supersymmetric D1 brane.
 
+## FAQ:
 
+1. Why bother writing the code and not using available libs?
+
+I am not sure if there are any open source libs implemeting what I needed, but even if there are, it is better to write my own code to get a better understanding and eliminate errors due to other people :)
 
 
 ## TODO: 
