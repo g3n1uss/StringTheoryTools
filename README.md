@@ -12,7 +12,7 @@ Boosts, rotations, S duality and T duality for NS-NS fields are implemented in t
 
 ## FAQ:
 
-1. Why bother writing the code and not using available libs?
+1. Why bother writing the code and not use available libs/frameworks?
 
 I am not sure if there are any open source libs implemeting what I needed, but even if there are, it is better to write my own code to get a better understanding and eliminate errors due to other people :)
 
