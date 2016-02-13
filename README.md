@@ -28,5 +28,6 @@ I am not sure if there are any open source libs implemeting what I needed, but e
 
 ## TODO: 
 
-1. Add Sen-Hassan-Cvetic method using large matrices to perform a series of dualities in one rotation [arxiv:hep-th/9512127](http://arxiv.org/abs/hep-th/9512127)
+1. Add more detailed description in README file.
+2. Add Sen-Hassan-Cvetic method using large matrices to perform a series of dualities in one rotation [arxiv:hep-th/9512127](http://arxiv.org/abs/hep-th/9512127)
 2. Implement duality rules for RR-fields
