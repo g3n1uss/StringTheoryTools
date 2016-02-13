@@ -10,11 +10,11 @@ A great example of utilizing T- S dualities and boosts is several solution-gener
 
 Package **TransformationRules.m**: boosts, rotations, S duality and T duality for NS-NS fields.
 
-An example of using the package is presented in Example.KerrToD1.nb, in which you start with a rotating black hole in 4 dimensions and perform a series of tranformations (add flat direction-boost-T duality-S duality) to obtain D1 brane. As a check we take the extremal non-rotating limit to check that the result is the well-known supersymmetric D1 brane.
+An example of using the package is presented in *Example.KerrToD1.nb*, in which you start with a rotating black hole in 4 dimensions and perform a series of tranformations (add flat direction-boost-T duality-S duality) to obtain D1 brane. As a check we take the extremal non-rotating limit to check that the result is the well-known supersymmetric D1 brane.
 
 Package **DiffGemetry**: calculation of connections, Riemann and Ricci tensors, Ricci scalar.
 
-An example of using the package is in Example.AdS2xS2.nb in which Einstein equations are checked for AdS2, S2 and AdS2xS2.
+An example of using the package is in *Example.AdS2xS2.nb* in which Einstein equations are checked for AdS2, S2 and AdS2xS2.
 
 ## FAQ:
 
@@ -28,3 +28,4 @@ I am not sure if there are any open source libs implemeting what I needed, but e
 1. Add Sen-Hassan-Cvetic method using large matrices to perform a series of dualities in one rotation [arxiv:hep-th/9512127](http://arxiv.org/abs/hep-th/9512127)
 2. Implement duality rules for RR-fields
 3. Add more examples.
+4. Add computation of spin connections and the corresponding example.
