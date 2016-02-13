@@ -17,7 +17,7 @@ Package **DiffGemetry**: calculation of connections, Riemann and Ricci tensors, 
 
 One example of using the package is *Example.AdS2xS2.nb*, in which Einstein equations are checked for AdS2, S2 and AdS2xS2.
 
-Another example is *Example.SUSY.IIB.nb*, in which we solve SUSY (Killing spinor) equations of type IIB supergravity in the NS-NS sector.
+Another example is *Example.SUSY.IIB.nb*, in which we solve SUSY (Killing spinor) equations of type IIB supergravity in the NS-NS sector for one particular background - the near horizon NS5 brane.
 
 ## FAQ:
 
