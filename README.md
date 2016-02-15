@@ -13,7 +13,7 @@ A great example of utilizing boosts and T/S dualities is a beautiful solution-ge
 
 An example of using the package is presented in *Example.KerrToD1.nb*, in which you start with a rotating black hole in 4 dimensions (Kerr black hole) and perform the series of tranformations, namely: "add flat direction"->"boost"-"T duality"->"S duality", to obtain the D1 brane. At the end we take the extremal non-rotating limit to check that the result is the well-known supersymmetric D1 brane.
 
-Package **DiffGemetry** implements computation of connections (Christoffel symbols), Riemann and Ricci tensors, Ricci scalar and spin connections.
+Package **DiffGemetry.m** implements computation of connections (Christoffel symbols), Riemann and Ricci tensors, Ricci scalar and spin connections.
 
 One simple example of using the package is presented *Example.AdS2xS2.nb*, in which the Einstein equations are checked for AdS2, S2 and AdS2xS2.
 
