@@ -9,9 +9,9 @@ This repository is a collection of various tools (written in Mathematica) used i
 
 Package **TransformationRules.m** implements boosts, rotations, S duality and T duality for NS-NS fields.
 
-A great example of utilizing boosts and T/S dualities is a beautiful solution-generating technique (here by solutions we mean that they solve the equations of motion, such as Einstein and Maxwell equations), in which you start with a simple solution and by performing a series of tranformations obtain something new. This solution-generating technique was used to [construct](http://arxiv.org/abs/hep-th/0105136) [fuzzballs](https://en.wikipedia.org/wiki/Fuzzball_(string_theory)).
+A great example of utilizing boosts and T/S dualities is a beautiful solution-generating technique (here by solutions we mean that they solve the equations of motion, such as Einstein and Maxwell equations), in which you start with a simple solution and by performing a series of transformations obtain something new. This solution-generating technique was used to [construct](http://arxiv.org/abs/hep-th/0105136) [fuzzballs](https://en.wikipedia.org/wiki/Fuzzball_(string_theory)).
 
-An example of using the package is presented in *Example.KerrToD1.nb*, in which you start with a rotating black hole in 4 dimensions (Kerr black hole) and perform the series of tranformations, namely: "add flat direction"->"boost"-"T duality"->"S duality", to obtain the D1 brane. At the end we take the extremal non-rotating limit to check that the result is the well-known supersymmetric D1 brane.
+An example of using the package is presented in *Example.KerrToD1.nb*, in which you start with a rotating black hole in 4 dimensions (Kerr black hole) and perform the series of transformations, namely: "add flat direction"->"boost"-"T duality"->"S duality", to obtain the D1 brane. At the end we take the extremal non-rotating limit to check that the result is the well-known supersymmetric D1 brane.
 
 Package **DiffGemetry.m** implements computation of connections (Christoffel symbols), Riemann and Ricci tensors, Ricci scalar and spin connections.
 
@@ -23,7 +23,7 @@ Another example is *Example.SUSY.IIB.nb*, in which we solve SUSY (Killing spinor
 
 1. Why bother writing this code and not just use other available libs/frameworks?
 
-I am not sure if there are any open source libs implemeting what I needed, but even if there are, it is better to write my own code to get a better understanding and eliminate errors due to other people :)
+I am not sure if there are any open source libs implementing what I needed, but even if there are, it is better to write my own code to get a better understanding and eliminate errors due to other people :)
 
 
 ## TODO: 
