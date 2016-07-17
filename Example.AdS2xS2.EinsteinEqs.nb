@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       145,          7]
-NotebookDataLength[     14681,        404]
-NotebookOptionsPosition[     13807,        373]
-NotebookOutlinePosition[     14226,        389]
-CellTagsIndexPosition[     14183,        386]
+NotebookDataLength[     14889,        407]
+NotebookOptionsPosition[     14017,        376]
+NotebookOutlinePosition[     14434,        392]
+CellTagsIndexPosition[     14391,        389]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,16 +26,18 @@ Cell[BoxData[
     "In", " ", "this", " ", "example", " ", "we", " ", "show", " ", "how", 
      " ", "to", " ", "use", " ", "several", " ", "functions", " ", "from", 
      " ", "DiffGeometry", " ", 
-     RowBox[{"package", ".", " ", "We"}], " ", "consider", " ", "the", " ", 
-     "background", " ", "AdS2xS2", " ", "and", " ", "show", " ", "that", " ", 
-     "both", " ", "AdS2", " ", "and", " ", "S2", " ", "subspaces", " ", 
-     "solve", " ", "the", " ", "Einstein", " ", "equations", " ", "with", " ",
-      "a", " ", "cosmological", " ", 
+     RowBox[{"package", ".", " ", "In"}], " ", "particular"}], ",", " ", 
+    RowBox[{
+    "we", " ", "consider", " ", "the", " ", "background", " ", "AdS2xS2", " ",
+      "and", " ", "show", " ", "that", " ", "both", " ", "AdS2", " ", "and", 
+     " ", "S2", " ", "subspaces", " ", "solve", " ", "the", " ", "Einstein", 
+     " ", "equations", " ", "with", " ", "a", " ", "cosmological", " ", 
      RowBox[{"constant", ".", " ", "However"}]}], ",", " ", 
     RowBox[{
-    "AdSxS2", " ", "does", " ", "not", " ", "and", " ", "supposed", " ", "to",
-      " ", "be", " ", "supported", " ", "by", " ", "the", " ", "fluxes"}]}], 
-   " ", "*)"}], "\[IndentingNewLine]", 
+    "AdSxS2", " ", "itself", " ", "does", " ", "not", " ", "solve", " ", 
+     "the", " ", "Einstein", " ", "equation", " ", "because", " ", "it", " ", 
+     "is", " ", "supposed", " ", "to", " ", "be", " ", "supported", " ", "by",
+      " ", "the", " ", "fluxes"}]}], " ", "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{"SetDirectory", "[", 
@@ -44,7 +46,8 @@ Cell[BoxData[
    RowBox[{"<<", "DiffGeometry`"}]}]}]], "Input",
  CellChangeTimes->{{3.647555782847351*^9, 3.647555834703765*^9}, 
    3.647555871129099*^9, {3.663985651330139*^9, 3.6639856519301767`*^9}, {
-   3.664379336069645*^9, 3.6643794314486847`*^9}}],
+   3.664379336069645*^9, 3.6643794314486847`*^9}, {3.677770720868656*^9, 
+   3.6777707571988783`*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -372,7 +375,7 @@ Cell[BoxData[
   3.6639862653002043`*^9, 3.663986271130754*^9}}]
 },
 WindowSize->{1366, 701},
-WindowMargins->{{Automatic, 456}, {Automatic, -35}},
+WindowMargins->{{88, Automatic}, {Automatic, -8}},
 PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
 FrontEndVersion->"10.0 for Linux x86 (64-bit) (September 9, 2014)",
 StyleDefinitions->"Default.nb"
@@ -388,24 +391,24 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[545, 20, 1258, 26, 207, "Input"],
-Cell[1806, 48, 2211, 63, 240, "Input"],
+Cell[545, 20, 1468, 29, 273, "Input"],
+Cell[2016, 51, 2211, 63, 240, "Input"],
 Cell[CellGroupData[{
-Cell[4042, 115, 1696, 40, 207, "Input"],
-Cell[5741, 157, 513, 11, 41, "Output"],
-Cell[6257, 170, 433, 8, 69, "Output"]
+Cell[4252, 118, 1696, 40, 207, "Input"],
+Cell[5951, 160, 513, 11, 41, "Output"],
+Cell[6467, 173, 433, 8, 69, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6727, 183, 1499, 39, 240, "Input"],
-Cell[8229, 224, 667, 13, 63, "Output"],
-Cell[8899, 239, 568, 9, 91, "Output"]
+Cell[6937, 186, 1499, 39, 240, "Input"],
+Cell[8439, 227, 667, 13, 63, "Output"],
+Cell[9109, 242, 568, 9, 91, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9504, 253, 1714, 44, 273, "Input"],
-Cell[11221, 299, 1634, 49, 194, "Output"],
-Cell[12858, 350, 362, 6, 63, "Output"]
+Cell[9714, 256, 1714, 44, 273, "Input"],
+Cell[11431, 302, 1634, 49, 194, "Output"],
+Cell[13068, 353, 362, 6, 63, "Output"]
 }, Open  ]],
-Cell[13235, 359, 568, 12, 108, "Input"]
+Cell[13445, 362, 568, 12, 108, "Input"]
 }
 ]
 *)
