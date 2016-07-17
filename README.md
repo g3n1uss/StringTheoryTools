@@ -2,7 +2,7 @@
 
 ## What is going on in this repo?
 
-This repository is a collection of various tools (written in Mathematica) used in String theory/Supergravity such as [T duality](https://en.wikipedia.org/wiki/T-duality), [S duality](https://en.wikipedia.org/wiki/S-duality), rotations, boosts, some differential geometry, etc. So far all the functions are collected in two packages **DiffGeometry.m** and **TransformationRules.m**. Usage of every function is shown in various examples, e.g. *Example...*.
+This repository is a collection of various tools (written in Mathematica) used in String theory/Supergravity such as [T duality](https://en.wikipedia.org/wiki/T-duality), [S duality](https://en.wikipedia.org/wiki/S-duality), rotations, boosts, some differential geometry, some group theory, etc. So far all the functions are collected in three packages **DiffGeometry.m**, **TransformationRules.m** and **GroupTheory.m**. Usage of every function is shown in various examples, e.g. *Example...*.
 
 
 ## Some details. Structure of the repository
@@ -15,9 +15,13 @@ An example of using the package is presented in *Example.KerrToD1.nb*, in which 
 
 Package **DiffGemetry.m** implements computation of connections (Christoffel symbols), Riemann and Ricci tensors, Ricci scalar and spin connections.
 
-One simple example of using the package is presented *Example.AdS2xS2.nb*, in which the Einstein equations are checked for AdS2, S2 and AdS2xS2.
+One simple example of using the package is presented *Example.AdS2xS2.EinsteinEqs.nb*, in which the Einstein equations are checked for AdS2, S2 and AdS2xS2.
 
-Another example is *Example.SUSY.IIB.nb*, in which we solve SUSY (Killing spinor) equations of type IIB supergravity in the NS-NS sector for one particular background - the near horizon NS5 brane.
+Another example is *Example.KillingSpinors.IIB.NearHorizonNS5.nb*, in which we solve SUSY (Killing spinor) equations of type IIB supergravity in the NS-NS sector for one particular background - the near horizon NS5 brane.
+
+Package **GroupTheory.m** so far (TO BE EXPANDED) contains only one function computing of adjoint represenation of Lie algebra.
+
+Example of using this package in shown in *Example.adjoint.su(2).nb* in which we start with su(2) Lie algebra in the fundamenatal represenation and compute the corresponding adjoint represenation.
 
 ## FAQ:
 
