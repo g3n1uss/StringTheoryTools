@@ -2,7 +2,7 @@
 
 ## What is going on in this repo?
 
-This repository is a collection of various tools (written in Mathematica) used in String theory/Supergravity such as [T duality](https://en.wikipedia.org/wiki/T-duality), [S duality](https://en.wikipedia.org/wiki/S-duality), rotations, boosts, some differential geometry, some group theory, etc. So far all the functions are collected in three packages **DiffGeometry.m**, **TransformationRules.m** and **GroupTheory.m**. Usage of every function is shown in various examples, e.g. *Example...*.
+This repository is a collection of various mathematical tools (written in Mathematica) used in String theory/Supergravity such as [T duality](https://en.wikipedia.org/wiki/T-duality), rotations, boosts, some differential geometry, some group theory, etc. So far all the functions are collected in three packages **DiffGeometry.m**, **TransformationRules.m** and **GroupTheory.m**. Usage of every function is shown in various examples, e.g. *Example...*.
 
 
 ## Some details. Structure of the repository
@@ -34,4 +34,4 @@ I am not sure if there are any open source libs implementing what I needed, but 
 
 1. Add more detailed description in README file.
 2. Add Sen-Hassan-Cvetic method using large matrices to perform a series of dualities in one rotation [arxiv:hep-th/9512127](http://arxiv.org/abs/hep-th/9512127)
-2. Implement duality rules for RR-fields
+3. Add more functions into **GroupTheory.m**
