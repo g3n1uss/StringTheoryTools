@@ -19,23 +19,20 @@ adjoint[generators_] :=
       Sum[cc[i, j, k] generators[[k]], {k, 1, dim}], {i, 1, dim}, {j, 
      1, dim}];
    (* solve the equations, 
-   to do so reshape eqsStrcConst as a vector {eq1,eq2,
-   eq3,...} suitable for Solve *)
-   (* (Times@@@{Dimensions[
-   eqsStrcConst]})[[1]] calculates the number of equations *)
+   to do so reshape eqsStrcConst in a suitable for Solve form - List:  
+   {eq1,eq2, eq3,...} *)
    
    strcConstsSubs = 
     Solve[FullSimplify[
-        ArrayReshape[
-          ArrayFlatten[
-           eqsStrcConst], {1, (Times @@@ {Dimensions[
-                eqsStrcConst]})[[1]]}][[1]]] == 0, 
+     ArrayReshape[ArrayFlatten[eqsStrcConst], {1,
+      Apply[Times, Dimensions[eqsStrcConst]]}]] == 0, 
       ArrayReshape[
         Table[cc[i, j, k], {i, 1, dim}, {j, 1, dim}, {k, 1, dim}], {1,
           dim*dim*dim}][[1]]][[1]];
-   (* we got a substitution list *)
-   (* read off adjoint *)
-   
+   (* here Apply[Times, Dimensions[eqsStrcConst]] calculates the number of equations *)
+
+   (* now we have sctructure constants in form of substitution list *)
+   (* read off the adjoint from the structure constants *)
    adj = ConstantArray[0, {dim, dim, dim}];
    Do[adj[[i, j, k]] = cc[i, j, k] /. strcConstsSubs, {i, 1, dim}, {j,
       1, dim}, {k, 1, dim}];
