@@ -19,15 +19,19 @@ One simple example of using the package is presented *Example.AdS2xS2.EinsteinEq
 
 Another example is *Example.KillingSpinors.IIB.NearHorizonNS5.nb*, in which we solve SUSY (Killing spinor) equations of type IIB supergravity in the NS-NS sector for one particular background - the near horizon NS5 brane.
 
-Package **GroupTheory.m** so far (TO BE EXPANDED) contains only one function computing of adjoint represenation of Lie algebra.
+Package **GroupTheory.m** contains functions needed in group theory such as computing of adjoint represenation of Lie algebra, perfoming the Cartan-Weyl decomposition, tools to work with superalgebras, etc.
 
-Example of using this package in shown in *Example.adjoint.su(2).nb* in which we start with su(2) Lie algebra in the fundamenatal represenation and compute the corresponding adjoint represenation.
+*Example.adjoint.su(2).nb*: we start with su(2) Lie algebra in the fundamenatal represenation and compute the corresponding adjoint represenation.
+
+Another example, *Example.CartanWeyl.of.SO(5).nb*, shows how to perform the Cartan-Weyl decomposition for so(5) albegra.
+
+*Example.GradedYangBaxter.psu(1,1).Holom.nb* shows how to deal wit superalgebras, in particular, with psu(1,1|2). We solve the modified graded Yang-Baxter equation for this superalgebra.
 
 ## FAQ:
 
 1. Why bother writing this code and not just use other available libs/frameworks?
 
-I am not sure if there are any open source libs implementing what I needed, but even if there are, it is better to write my own code to get a better understanding and eliminate errors due to other people :)
+I am not sure if there are any open source libs implementing what I needed, but even if there are, it is better to write my own code to get a better understanding and eliminate possible errors.
 
 
 ## TODO: 
