@@ -11,7 +11,7 @@ Code from this repository was used in the following papers:
 * Y. Chervonyi and O. Lunin, “Supergravity background of the lambda-deformed AdS_3 x S^3 supercoset,” Nucl.Phys. B910 (2016) 685-711, arXiv:1606.00394 [hep-th].
 * Y. Chervonyi, “Towards higher dimensional black rings,” Phys.Rev. D92 (2015) 12, 124037, arXiv:1510.06041 [hep-th].
 * Y. Chervonyi and O. Lunin, “Killing(-Yano) Tensors in String Theory,”  JHEP 1509, 182 (2015)  arXiv:1505.06154 [hep-th].
-* Y. Chervonyi and O. Lunin, “(Non)-Integrability of Geodesics in D-brane Backgrounds,” JHEP  1402, 061 (2014) arXiv:1311.1521 [hep-th].
+* Y. Chervonyi and O. Lunin, “(Non)-Integrability of Geodesics in D-brane Backgrounds,” [JHEP  1402, 061 (2014)](http://dx.doi.org/10.1007/JHEP02(2014)061) [arXiv:1311.1521 [hep-th]](http://arxiv.org/abs/arXiv:1311.1521).
 
 ## What is going on in this repo?
 
