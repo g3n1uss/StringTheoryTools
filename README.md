@@ -2,7 +2,7 @@
 
 ## FAQ, disclaimer.
 
-1. Why bother writing this code and not just use other available libs/frameworks?
+### Why bother writing this code and not just use other available libs/frameworks?
 
 I am not sure if there are any open source libs implementing the desired functionality, but even if there are, it is better to write my own code to get a better understanding of what is going on and eliminate possible errors.
 
