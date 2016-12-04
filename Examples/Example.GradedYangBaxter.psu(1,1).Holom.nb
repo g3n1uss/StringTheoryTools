@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     26274,        741]
-NotebookOptionsPosition[     25490,        710]
-NotebookOutlinePosition[     25830,        725]
-CellTagsIndexPosition[     25787,        722]
+NotebookDataLength[     26665,        748]
+NotebookOptionsPosition[     25883,        717]
+NotebookOutlinePosition[     26220,        732]
+CellTagsIndexPosition[     26177,        729]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -35,12 +35,18 @@ Cell[BoxData[
      RowBox[{"1", ",", 
       RowBox[{"1", "|", "2"}]}], ")"}], " ", "superalgebra", " ", "in", " ", 
     "the", " ", "holomorphic", " ", "parametrization"}], " ", "*)"}], 
-  "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"import", " ", "the", " ", "package", " ", "GroupTheory"}], "*)"}],
+   "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{"SetDirectory", "[", 
      RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\n", 
-   RowBox[{"<<", "GroupTheory`"}]}]}]], "Input",
+   RowBox[{"Import", "[", 
+    RowBox[{
+     RowBox[{"ParentDirectory", "[", "]"}], "<>", 
+     "\"\</Packages/GroupTheory.m\>\""}], "]"}]}]}]], "Input",
  CellChangeTimes->{{3.6792287923849897`*^9, 3.679228863344459*^9}, {
    3.679228895499621*^9, 3.6792290086258993`*^9}, {3.6792290889525213`*^9, 
    3.679229181389647*^9}, {3.679229288700425*^9, 3.6792293208155537`*^9}, {
@@ -49,7 +55,8 @@ Cell[BoxData[
    3.6792613414081497`*^9, {3.679326886113097*^9, 3.679326912282843*^9}, {
    3.679326947158737*^9, 3.679326960748267*^9}, {3.67933312204103*^9, 
    3.67933313236852*^9}, {3.6819184121641283`*^9, 3.6819184420720787`*^9}, 
-   3.6819184763315973`*^9, {3.68191867873895*^9, 3.681918722618153*^9}}],
+   3.6819184763315973`*^9, {3.68191867873895*^9, 3.681918722618153*^9}, {
+   3.689871333835292*^9, 3.689871363493291*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -115,12 +122,13 @@ Cell[BoxData[
          RowBox[{
           RowBox[{"-", 
            RowBox[{"F", "[", "13", "]"}]}], "+", 
-          RowBox[{"F", "[", "16", "]"}]}]}], "}"}]}], "}"}]}], ";"}], "\n", 
+          RowBox[{"F", "[", "16", "]"}]}]}], "}"}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{"dimension", " ", "of", " ", "the", " ", "psu", 
      RowBox[{"(", 
       RowBox[{"1", ",", "1"}], ")"}], " ", "superalgebra"}], " ", "*)"}], 
-   "\[IndentingNewLine]", 
+   "\n", 
    RowBox[{
     RowBox[{"dim", "=", "16"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
@@ -155,12 +163,11 @@ Cell[BoxData[
         RowBox[{"1", ",", "0"}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"0", ",", 
-         RowBox[{"-", "1"}]}], "}"}]}], "}"}]}], ";"}], "\n", 
+         RowBox[{"-", "1"}]}], "}"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{
     "extract", " ", "bosonic", " ", "and", " ", "fermionice", " ", "pieces", 
-     " ", "of", " ", "the", " ", "supermatrix"}], " ", "*)"}], 
-   "\[IndentingNewLine]", 
+     " ", "of", " ", "the", " ", "supermatrix"}], " ", "*)"}], "\n", 
    RowBox[{
     RowBox[{
      RowBox[{"{", 
@@ -194,10 +201,9 @@ Cell[BoxData[
          RowBox[{"psu", ",", 
           RowBox[{"F", "[", "ii", "]"}]}], "]"}]}], "]"}], ",", 
       RowBox[{"{", 
-       RowBox[{"ii", ",", "1", ",", "dim"}], "}"}]}], "]"}], ";"}], 
-   "\[IndentingNewLine]", 
+       RowBox[{"ii", ",", "1", ",", "dim"}], "}"}]}], "]"}], ";"}], "\n", 
    RowBox[{"(*", " ", 
-    RowBox[{"basis", " ", "vectors"}], " ", "*)"}], "\n", 
+    RowBox[{"basis", " ", "vectors"}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Xvec", "=", 
      RowBox[{"Table", "[", 
@@ -263,8 +269,7 @@ Cell[BoxData[
         RowBox[{"0", ",", "0", ",", "0", ",", "0"}], "}"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
-    RowBox[{"fermionic", " ", "pieces"}], " ", "*)"}], "\[IndentingNewLine]", 
-   
+    RowBox[{"fermionic", " ", "pieces"}], " ", "*)"}], "\n", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{"Do", "[", 
@@ -290,7 +295,7 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"jj", ",", 
          RowBox[{"ii", "+", "1"}], ",", "12"}], "}"}]}], "]"}], ";"}], "*)"}],
-    "\n", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"Rmtr", "[", 
@@ -363,11 +368,12 @@ Cell[BoxData[
       RowBox[{"Rmtr", ".", "metrUp"}]}]}], ";"}], "\n", 
    RowBox[{
     RowBox[{"Rt", "=", 
-     RowBox[{"Rmtr", ".", "t"}]}], ";"}], "\[IndentingNewLine]", 
+     RowBox[{"Rmtr", ".", "t"}]}], ";"}], "\n", 
    RowBox[{"(*", " ", 
     RowBox[{
      RowBox[{"graded", " ", "modified", " ", "Yang"}], "-", 
-     RowBox[{"Baxter", " ", "equation"}]}], " ", "*)"}], "\n", 
+     RowBox[{"Baxter", " ", "equation"}]}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"YBeq", "=", 
      RowBox[{
@@ -487,7 +493,8 @@ Cell[BoxData[
    3.679252823681748*^9, 3.679260910677266*^9, 3.679260977299655*^9, 
    3.679261382828195*^9, 3.679263089484301*^9, {3.679263120018386*^9, 
    3.679263124500319*^9}, 3.679327032551467*^9, 3.6793335006452093`*^9, 
-   3.679343690199544*^9, 3.679349147164653*^9, 3.6819185838160887`*^9}]
+   3.679343690199544*^9, 3.679349147164653*^9, 3.6819185838160887`*^9, 
+   3.689871378196865*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -554,7 +561,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.679252874263023*^9, 3.6792528844911213`*^9}, 
    3.679260990963846*^9, 3.6792613871190367`*^9, 3.679263128257504*^9, 
    3.679327731276658*^9, 3.6793335044986258`*^9, 3.679343698074418*^9, 
-   3.679349148942608*^9, 3.681918585375456*^9}]
+   3.679349148942608*^9, 3.681918585375456*^9, 3.689871379411584*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -618,7 +625,7 @@ Cell[BoxData[
    3.679261000101007*^9, 3.6792613903599043`*^9, {3.679263134863662*^9, 
    3.679263218596788*^9}, {3.6793277447207603`*^9, 3.6793278061987*^9}, {
    3.679333507665155*^9, 3.6793336280268*^9}, 3.679343700355668*^9, 
-   3.6793491517862463`*^9, 3.681918588514887*^9}]
+   3.6793491517862463`*^9, 3.681918588514887*^9, 3.689871384334421*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -705,11 +712,11 @@ Cell[BoxData[
  CellChangeTimes->{
   3.6793278845698338`*^9, 3.67932793986829*^9, 3.6793331765935907`*^9, {
    3.679333630781589*^9, 3.67933365604161*^9}, {3.679343694426124*^9, 
-   3.679343721896472*^9}, 3.6819186197143993`*^9}]
+   3.679343721896472*^9}, 3.6819186197143993`*^9, 3.68987138661806*^9}]
 }, Open  ]]
 },
-WindowSize->{1717, 906},
-WindowMargins->{{Automatic, 144}, {Automatic, -2}},
+WindowSize->{1366, 704},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.0 for Linux x86 (64-bit) (September 9, 2014)",
 StyleDefinitions->"Default.nb"
 ]
@@ -724,24 +731,24 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1518, 31, 175, "Input"],
-Cell[2079, 53, 4497, 123, 372, "Input"],
-Cell[6579, 178, 8096, 244, 867, "Input"],
+Cell[558, 20, 1824, 38, 222, "Input"],
+Cell[2385, 60, 4497, 123, 365, "Input"],
+Cell[6885, 185, 8092, 243, 829, "Input"],
 Cell[CellGroupData[{
-Cell[14700, 426, 1751, 44, 108, "Input"],
-Cell[16454, 472, 873, 17, 63, "Output"]
+Cell[15002, 432, 1751, 44, 133, "Input"],
+Cell[16756, 478, 899, 18, 45, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17364, 494, 1636, 46, 141, "Input"],
-Cell[19003, 542, 629, 14, 63, "Output"]
+Cell[17692, 501, 1636, 46, 162, "Input"],
+Cell[19331, 549, 651, 14, 45, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19669, 561, 1436, 40, 75, "Input"],
-Cell[21108, 603, 850, 17, 63, "Output"]
+Cell[20019, 568, 1436, 40, 104, "Input"],
+Cell[21458, 610, 872, 17, 45, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21995, 625, 728, 18, 76, "Input"],
-Cell[22726, 645, 2748, 62, 548, "Output"]
+Cell[22367, 632, 728, 18, 77, "Input"],
+Cell[23098, 652, 2769, 62, 544, "Output"]
 }, Open  ]]
 }
 ]

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       145,          7]
-NotebookDataLength[     22136,        616]
-NotebookOptionsPosition[     21229,        585]
-NotebookOutlinePosition[     21645,        601]
-CellTagsIndexPosition[     21602,        598]
+NotebookDataLength[     23300,        642]
+NotebookOptionsPosition[     22389,        611]
+NotebookOutlinePosition[     22804,        627]
+CellTagsIndexPosition[     22761,        624]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,20 +26,27 @@ Cell[BoxData[
      RowBox[{
      "In", " ", "this", " ", "example", " ", "we", " ", "show", " ", "how", 
       " ", "to", " ", "use", " ", "various", " ", "functions", " ", "from", 
-      " ", "TransformationRules", " ", 
+      " ", "the", " ", "TransformationRules", " ", 
       RowBox[{"package", ".", " ", "We"}], " ", "consider", " ", "one", " ", 
       "particular", " ", "solution"}], "-", 
      RowBox[{"generating", " ", "technique"}]}], ",", " ", 
     RowBox[{
     "in", " ", "which", " ", "one", " ", "starts", " ", "with", " ", "a", " ",
-      "Kerr", " ", "solution", " ", "in", " ", "4", "D", " ", "and", " ", 
-     "obtain", " ", "SUSY", " ", "D1", " ", "brane", " ", "in", " ", "5", 
-     "D"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+      "Kerr", " ", "black", " ", "hole", " ", "solution", " ", "in", " ", "4",
+      "D", " ", "and", " ", "obtains", " ", "a", " ", "supersymmetric", " ", 
+     "D1", " ", "brane", " ", "in", " ", "5", "D"}]}], " ", "*)"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"import", " ", "the", " ", "package"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{"SetDirectory", "[", 
      RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\n", 
-   RowBox[{"<<", "TransformationRules`"}]}]}]], "Input",
+   RowBox[{"Import", "[", 
+    RowBox[{
+     RowBox[{"ParentDirectory", "[", "]"}], "<>", 
+     "\"\</Packages/TransformationRules.m\>\""}], "]"}]}]}]], "Input",
  CellChangeTimes->{{3.661614391875246*^9, 3.661614395816246*^9}, {
    3.661614465422904*^9, 3.661614478114457*^9}, 3.6616145139492073`*^9, {
    3.6616145439624863`*^9, 3.661614546734288*^9}, {3.661614736243671*^9, 
@@ -47,19 +54,25 @@ Cell[BoxData[
    3.663946961072956*^9, 3.663947072597906*^9}, {3.6639471288300943`*^9, 
    3.663947129505612*^9}, {3.663948544006858*^9, 3.663948556786045*^9}, {
    3.663948609573773*^9, 3.6639486102291183`*^9}, {3.663948644201962*^9, 
-   3.663948658455966*^9}, {3.664379451397558*^9, 3.6643795472493963`*^9}}],
+   3.663948658455966*^9}, {3.664379451397558*^9, 3.6643795472493963`*^9}, {
+   3.689870334484494*^9, 3.689870410116016*^9}}],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"(*", " ", 
    RowBox[{
-    RowBox[{
-    "Example", " ", "of", " ", "a", " ", "series", " ", "of", " ", "O", 
+    RowBox[{"A", " ", "series", " ", "of", " ", "O", 
      RowBox[{"(", 
       RowBox[{"d", ",", "d"}], ")"}], " ", "transformations", " ", 
      "including", " ", "boosts"}], ",", " ", 
     RowBox[{"T", " ", "dualities"}], ",", " ", 
-    RowBox[{"S", " ", "duality"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+    RowBox[{
+    "S", " ", "duality", " ", "leading", " ", "to", " ", "the", " ", 
+     "supersymmetric", " ", "D1", " ", "brane"}]}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"specify", " ", "the", " ", "coordinates"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{"y", "=", 
@@ -71,11 +84,11 @@ Cell[BoxData[
     RowBox[{"r", "=", 
      RowBox[{"x", "[", "4", "]"}]}], ";", 
     RowBox[{"th", "=", 
-     RowBox[{"x", "[", "5", "]"}]}], ";"}], "\n", 
+     RowBox[{"x", "[", "5", "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{
     "Start", " ", "with", " ", "the", " ", "4", "D", " ", "Kerr", " ", 
-     "solution"}], " ", "*)"}], "\[IndentingNewLine]", 
+     "black", " ", "hole", " ", "solution"}], " ", "*)"}], "\n", 
    RowBox[{
     RowBox[{"gdownKerr4D", "=", 
      RowBox[{"{", 
@@ -212,8 +225,9 @@ Cell[BoxData[
    RowBox[{"(*", " ", 
     RowBox[{
     "Add", " ", "the", " ", "flat", " ", "direction", " ", "to", " ", "the", 
-     " ", "Kerr", " ", "solution", " ", "to", " ", "create", " ", "5", "D", 
-     " ", "black", " ", "string"}], " ", "*)"}], "\[IndentingNewLine]", 
+     " ", "Kerr", " ", "solution", " ", "to", " ", "create", " ", "a", " ", 
+     "5", "D", " ", "black", " ", "string"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"gdownBlackString", "=", 
      RowBox[{"ArrayFlatten", "[", 
@@ -234,8 +248,11 @@ Cell[BoxData[
          "}"}]}], "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{
-     RowBox[{"Othe", " ", "NS"}], "-", 
+     RowBox[{"The", " ", "NS"}], "-", 
      RowBox[{"NS", " ", "fields", " ", "vanish"}]}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"The", " ", "B", " ", "field"}], " ", "*)"}], 
    "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"BBlackString", "=", 
@@ -244,6 +261,8 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"5", ",", "5"}], "}"}]}], "]"}]}], ";"}], 
    "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"The", " ", "dilaton"}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{"Phi", "=", "0"}], ",", " ", 
@@ -258,7 +277,8 @@ Cell[BoxData[
    3.66161474104318*^9}, {3.663946759739519*^9, 3.6639468373278637`*^9}, {
    3.663946961072956*^9, 3.663947072597906*^9}, {3.6639471288300943`*^9, 
    3.663947129505612*^9}, {3.663948544006858*^9, 3.663948556786045*^9}, {
-   3.663949533874955*^9, 3.663949539517447*^9}, 3.6643794872273693`*^9}],
+   3.663949533874955*^9, 3.663949539517447*^9}, 3.6643794872273693`*^9, {
+   3.6898704191483107`*^9, 3.6898705041490707`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -341,8 +361,8 @@ Cell[BoxData[
      "the", " ", "charge", " ", "of", " ", "the", " ", "fundamental", " ", 
      "string"}], ",", " ", 
     RowBox[{
-     RowBox[{"let", "'"}], "s", " ", "introduce", " ", "this", " ", 
-     "charge"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"let", "'"}], "s", " ", "denote", " ", "this", " ", "charge", 
+     " ", "as", " ", "Q"}]}], " ", "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{"chargeSubs", "=", 
@@ -384,7 +404,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.663949100556671*^9, 3.663949161386909*^9}, {
   3.663949257786763*^9, 3.663949258114683*^9}, {3.663949294924327*^9, 
   3.663949299351192*^9}, {3.663949400598984*^9, 3.6639494018130302`*^9}, {
-  3.6639496518886337`*^9, 3.6639496521350183`*^9}}],
+  3.6639496518886337`*^9, 3.6639496521350183`*^9}, {3.6898705411969967`*^9, 
+  3.689870545545176*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -406,8 +427,9 @@ Cell[BoxData[
         RowBox[{"Sqrt", "[", "dilF1c", "]"}], "]"}]}], "gdownF1c"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
-    RowBox[{"S", " ", "duality", " ", "rules"}], " ", "*)"}], 
-   "\[IndentingNewLine]", 
+    RowBox[{
+    "S", " ", "duality", " ", "rules", " ", "in", " ", "the", " ", "Einstein",
+      " ", "frame"}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"dilD1c", "=", 
      RowBox[{"1", "/", "dilF1c"}]}], ";"}], "\[IndentingNewLine]", 
@@ -422,8 +444,8 @@ Cell[BoxData[
     RowBox[{"CD1c", "=", "BF1c"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{
-    "transition", " ", "back", " ", "to", " ", "string", " ", "frame"}], " ", 
-    "*)"}], "\[IndentingNewLine]", 
+    "transition", " ", "back", " ", "to", " ", "the", " ", "string", " ", 
+     "frame"}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"gdownD1c", "=", 
      RowBox[{"FullSimplify", "[", 
@@ -450,7 +472,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.6639488663503923`*^9, 3.6639489782143583`*^9}, {
   3.66394978453515*^9, 3.6639498095503883`*^9}, {3.6639498488911123`*^9, 
   3.663949849686706*^9}, {3.663949910891074*^9, 3.663949915655101*^9}, {
-  3.6639499543014727`*^9, 3.663949978773058*^9}}],
+  3.6639499543014727`*^9, 3.663949978773058*^9}, {3.689870559264936*^9, 
+  3.68987057152654*^9}}],
 
 Cell["", "PageBreak",
  PageBreakBelow->True],
@@ -465,8 +488,8 @@ Cell[BoxData[
       " ", "and", " ", "non"}], "-", 
      RowBox[{"rotating", " ", "limit", " ", "a"}]}], "\[Rule]", 
     RowBox[{
-    "0", " ", "to", " ", "get", " ", "SUSY", " ", "D1", " ", "brane"}]}], " ",
-    "*)"}], "\[IndentingNewLine]", 
+    "0", " ", "to", " ", "get", " ", "the", " ", "supersymmetric", " ", "D1", 
+     " ", "brane"}]}], " ", "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{"gdownD1cExtr", "=", 
     RowBox[{"FullSimplify", "[", 
@@ -481,7 +504,8 @@ Cell[BoxData[
 
  CellChangeTimes->{{3.663949928803555*^9, 3.663949932506854*^9}, {
    3.663949985147085*^9, 3.663950034214498*^9}, {3.663950210122546*^9, 
-   3.663950256049438*^9}, 3.663950327135625*^9}],
+   3.663950256049438*^9}, 3.663950327135625*^9, {3.689870581672435*^9, 
+   3.689870585470648*^9}}],
 
 Cell[CellGroupData[{
 
@@ -517,7 +541,8 @@ Cell[BoxData[
      SuperscriptBox["h", "2"], " ", 
      RowBox[{"x", "[", "4", "]"}]}]}]}], "}"}]], "Output",
  CellChangeTimes->{{3.6616153110967617`*^9, 3.661615348283318*^9}, {
-   3.6639502852877913`*^9, 3.663950298488332*^9}, 3.663950357743718*^9}]
+   3.6639502852877913`*^9, 3.663950298488332*^9}, 3.663950357743718*^9, 
+   3.6898705902944736`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -561,7 +586,8 @@ Cell[BoxData[
       SuperscriptBox[
        RowBox[{"x", "[", "4", "]"}], "2"]}]}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{{3.661615366204125*^9, 3.661615382769912*^9}, {
-   3.66395030795124*^9, 3.663950311073813*^9}, 3.66395036014753*^9}]
+   3.66395030795124*^9, 3.663950311073813*^9}, 3.66395036014753*^9, 
+   3.689870593956943*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -583,7 +609,7 @@ Cell[BoxData[
      RowBox[{"3", "^", "2"}]}]}]}], "*)"}]], "Input",
  CellChangeTimes->{{3.6639503668489447`*^9, 3.66395039954907*^9}}]
 },
-WindowSize->{1920, 1014},
+WindowSize->{1366, 704},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
 FrontEndVersion->"10.0 for Linux x86 (64-bit) (September 9, 2014)",
@@ -600,24 +626,24 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[545, 20, 1522, 29, 141, "Input"],
-Cell[2070, 51, 7680, 209, 438, "Input"],
-Cell[9753, 262, 1670, 39, 273, "Input"],
-Cell[11426, 303, 1260, 29, 141, "Input"],
-Cell[12689, 334, 1912, 52, 108, "Input"],
-Cell[14604, 388, 2393, 64, 345, "Input"],
-Cell[17000, 454, 44, 1, 4, "PageBreak",
+Cell[545, 20, 1876, 37, 249, "Input"],
+Cell[2424, 59, 8167, 221, 655, "Input"],
+Cell[10594, 282, 1670, 39, 249, "Input"],
+Cell[12267, 323, 1260, 29, 162, "Input"],
+Cell[13530, 354, 1981, 53, 162, "Input"],
+Cell[15514, 409, 2515, 66, 347, "Input"],
+Cell[18032, 477, 44, 1, 5, "PageBreak",
  PageBreakBelow->True],
-Cell[17047, 457, 996, 26, 75, "Input"],
+Cell[18079, 480, 1070, 27, 104, "Input"],
 Cell[CellGroupData[{
-Cell[18068, 487, 781, 20, 75, "Input"],
-Cell[18852, 509, 379, 10, 68, "Output"]
+Cell[19174, 511, 781, 20, 75, "Input"],
+Cell[19958, 533, 407, 11, 52, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19268, 524, 378, 10, 41, "Input"],
-Cell[19649, 536, 989, 27, 89, "Output"]
+Cell[20402, 549, 378, 10, 45, "Input"],
+Cell[20783, 561, 1015, 28, 111, "Output"]
 }, Open  ]],
-Cell[20653, 566, 572, 17, 41, "Input"]
+Cell[21813, 592, 572, 17, 45, "Input"]
 }
 ]
 *)
