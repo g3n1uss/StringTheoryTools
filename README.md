@@ -30,11 +30,11 @@ This repository contains implementations of various mathematical tools (written 
 
    One simple example of using the package is [AdS2xS2.EinsteinEqs](https://github.com/g3n1uss/StringTheoryTools/blob/master/Examples/AdS2xS2.EinsteinEqs.nb), in which the Einstein equations are checked for AdS2, S2 and AdS2xS2 geometries.
 
-   Another example, [KillingSpinors.IIB.NearHorizonNS5](https://github.com/g3n1uss/StringTheoryTools/blob/master/Examples/KillingSpinors.IIB.NearHorizonNS5.nb), in which we solve SUSY (Killing spinor) equations of type IIB supergravity in the NS-NS sector for one particular background - the near horizon NS5 brane.
+   In another example, [KillingSpinors.IIB.NearHorizonNS5](https://github.com/g3n1uss/StringTheoryTools/blob/master/Examples/KillingSpinors.IIB.NearHorizonNS5.nb) we solve the supersymmetry (Killing spinor) equations of type IIB supergravity in the NS-NS sector for one particular background - the near horizon NS5 brane.
 
 3. Package [GroupTheory](https://github.com/g3n1uss/StringTheoryTools/blob/master/Packages/GroupTheory.m) contains some group-theoretical functionality, such as computing of adjoint represenation of Lie algebra, perfoming the Cartan-Weyl decomposition, tools needed to work with superalgebras, etc.
 
-   [adjoint.su(2)](https://github.com/g3n1uss/StringTheoryTools/blob/master/Examples/adjoint.of.su(2).nb): we start with su(2) Lie algebra in the fundamenatal represenation and compute the corresponding adjoint represenation.
+   In [adjoint.su(2)](https://github.com/g3n1uss/StringTheoryTools/blob/master/Examples/adjoint.of.su(2).nb) we start with the su(2) Lie algebra in the fundamenatal represenation and compute the corresponding adjoint represenation.
 
    [GradedYangBaxter.psu(1,1).Holom](https://github.com/g3n1uss/StringTheoryTools/blob/master/Examples/GradedYangBaxter.psu(1%2C1).Holom.nb) demonstrates an example of dealing with psu(1,1|2) Lie superalgebra. We solve the modified graded Yang-Baxter equation for this superalgebra.
 
