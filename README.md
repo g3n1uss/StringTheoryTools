@@ -2,6 +2,10 @@
 
 ![Strings](https://github.com/g3n1uss/StringTheoryTools/blob/master/Strings.jpg)
 
+## What is going on in this repo?
+
+This repository contains implementations of various mathematical tools (written in Mathematica) used in String theory/Supergravity suplemented by examples such as [T duality](https://en.wikipedia.org/wiki/T-duality), [rotations](https://en.wikipedia.org/wiki/Rotation_matrix), [boosts](https://en.wikipedia.org/wiki/Lorentz_transformation#boost), some [differential geometry](https://en.wikipedia.org/wiki/Differential_geometry) and [group theory](https://en.wikipedia.org/wiki/Group_theory), etc. So far all the functions are distributed in three packages **DiffGeometry**, **TransformationRules** and **GroupTheory** located in the [Packages](https://github.com/g3n1uss/StringTheoryTools/tree/master/Packages) folder. Usage of each function is demonstrated in various examples located in the [Examples](https://github.com/g3n1uss/StringTheoryTools/tree/master/Examples) folder.
+
 
 ### Why bother writing this code and not just use other available libs/frameworks?
 
@@ -14,9 +18,7 @@ Code from this repository was used in the following papers:
 * Y. Chervonyi and O. Lunin, “Killing(-Yano) Tensors in String Theory,”  [JHEP 1509, 182 (2015)](http://dx.doi.org/10.1007/JHEP09(2015)182)  [arXiv:1505.06154 [hep-th]](http://arxiv.org/abs/arXiv:1505.06154).
 * Y. Chervonyi and O. Lunin, “(Non)-Integrability of Geodesics in D-brane Backgrounds,” [JHEP  1402, 061 (2014)](http://dx.doi.org/10.1007/JHEP02(2014)061) [arXiv:1311.1521 [hep-th]](http://arxiv.org/abs/arXiv:1311.1521).
 
-## What is going on in this repo?
 
-This repository contains implementations of various mathematical tools (written in Mathematica) used in String theory/Supergravity suplemented by examples such as [T duality](https://en.wikipedia.org/wiki/T-duality), [rotations](https://en.wikipedia.org/wiki/Rotation_matrix), [boosts](https://en.wikipedia.org/wiki/Lorentz_transformation#boost), some [differential geometry](https://en.wikipedia.org/wiki/Differential_geometry) and [group theory](https://en.wikipedia.org/wiki/Group_theory), etc. So far all the functions are distributed in three packages **DiffGeometry**, **TransformationRules** and **GroupTheory** located in the [Packages](https://github.com/g3n1uss/StringTheoryTools/tree/master/Packages) folder. Usage of each function is demonstrated in various examples located in the [Examples](https://github.com/g3n1uss/StringTheoryTools/tree/master/Examples) folder.
 
 
 ## Some details. Structure of the repository
