@@ -26,7 +26,7 @@ This repository is a collection of various mathematical tools (written in Mathem
 
    In [GenerateD1braneFromKerr](https://github.com/g3n1uss/StringTheoryTools/blob/master/Examples/GenerateD1braneFromKerr.nb) we demonstrate this solution-generating technique. We start with a rotating black hole in 4 dimensions (the [Kerr black hole](https://en.wikipedia.org/wiki/Rotating_black_hole)) and perform the following series of transformations: "add flat direction"->"boost"->"T duality"->"S duality", to obtain the black D1 brane. At the end we take the extremal static (no rotation) limit to check that the result is the well-known supersymmetric D1 brane.
 
-2. Package [DiffGemetry](https://github.com/g3n1uss/StringTheoryTools/blob/master/Packages/DiffGeometry.m) implements computation of connections (Christoffel symbols), Riemann and Ricci tensors, Ricci scalar and spin connections.
+2. Package [DiffGeometry](https://github.com/g3n1uss/StringTheoryTools/blob/master/Packages/DiffGeometry.m) implements computation of connections (Christoffel symbols), Riemann and Ricci tensors, Ricci scalar and spin connections.
 
    One simple example of using the package is [AdS2xS2.EinsteinEqs](https://github.com/g3n1uss/StringTheoryTools/blob/master/Examples/AdS2xS2.EinsteinEqs.nb), in which the Einstein equations are checked for AdS2, S2 and AdS2xS2 geometries.
 
