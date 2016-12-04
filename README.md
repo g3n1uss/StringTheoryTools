@@ -7,7 +7,7 @@
 I am not sure if there are any open source libs implementing the desired functionality, but even if there are, it is better to write my own code to get a better understanding of what is going on and eliminate possible errors.
 
 Code from this repository was used in the following papers:
-* Y. Chervonyi and O. Lunin, “Generalized lambda-deformations of AdS_p x S^p,” [Generalized lambda-deformations of AdSp x Sp](http://dx.doi.org/10.1016/j.nuclphysb.2016.10.014) [arXiv:1608.06641 [hep-th]](http://arxiv.org/abs/arXiv:1608.06641).
+* Y. Chervonyi and O. Lunin, “Generalized lambda-deformations of AdS_p x S^p,” [Generalized lambda-deformations of AdSp x Sp](http://dx.doi.org/10.1016/j.nuclphysb.2016.10.014), [arXiv:1608.06641 [hep-th]](http://arxiv.org/abs/arXiv:1608.06641).
 * Y. Chervonyi and O. Lunin, “Supergravity background of the lambda-deformed AdS_3 x S^3 supercoset,” [Nucl.Phys. B910 (2016) 685-711](http://dx.doi.org/10.1016/j.nuclphysb.2016.07.023), [arXiv:1606.00394 [hep-th]](http://arxiv.org/abs/arXiv:1606.00394).
 * Y. Chervonyi, “Towards higher dimensional black rings,” [Phys.Rev. D92 (2015) 12, 124037](http://dx.doi.org/10.1103/PhysRevD.92.124037), [arXiv:1510.06041 [hep-th]](http://arxiv.org/abs/arXiv:1510.06041).
 * Y. Chervonyi and O. Lunin, “Killing(-Yano) Tensors in String Theory,”  [JHEP 1509, 182 (2015)](http://dx.doi.org/10.1007/JHEP09(2015)182)  [arXiv:1505.06154 [hep-th]](http://arxiv.org/abs/arXiv:1505.06154).
