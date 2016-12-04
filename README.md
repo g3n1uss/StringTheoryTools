@@ -1,7 +1,5 @@
 # StringTheoryTools
 
-## FAQ, disclaimer.
-
 ### Why bother writing this code and not just use other available libs/frameworks?
 
 I am not sure if there are any open source libs implementing the desired functionality, but even if there are, it is better to write my own code to get a better understanding of what is going on and eliminate possible errors.
@@ -41,6 +39,6 @@ This repository contains implementations of various mathematical tools (written 
 
 ## TODO: 
 
-1. Add more detailed description in README file.
+1. Add more examples.
 2. Add Sen-Hassan-Cvetic method using large matrices to perform a series of dualities in one rotation [arxiv:hep-th/9512127](http://arxiv.org/abs/hep-th/9512127)
 3. Add more functions into **GroupTheory**
