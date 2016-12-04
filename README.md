@@ -2,6 +2,8 @@
 
 ![Strings](https://github.com/g3n1uss/StringTheoryTools/blob/master/Strings.jpg)
 
+*Universe of strings. Image taken from http://turbulentscientist.blogspot.com/*
+
 ## What is going on in this repo?
 
 This repository contains implementations of various mathematical tools (written in Mathematica) used in String theory/Supergravity suplemented by examples such as [T duality](https://en.wikipedia.org/wiki/T-duality), [rotations](https://en.wikipedia.org/wiki/Rotation_matrix), [boosts](https://en.wikipedia.org/wiki/Lorentz_transformation#boost), some [differential geometry](https://en.wikipedia.org/wiki/Differential_geometry) and [group theory](https://en.wikipedia.org/wiki/Group_theory), etc. So far all the functions are distributed in three packages **DiffGeometry**, **TransformationRules** and **GroupTheory** located in the [Packages](https://github.com/g3n1uss/StringTheoryTools/tree/master/Packages) folder. Usage of each function is demonstrated in various examples located in the [Examples](https://github.com/g3n1uss/StringTheoryTools/tree/master/Examples) folder.
