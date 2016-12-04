@@ -1,6 +1,6 @@
 # StringTheoryTools
 
-![Strings](https://github.com/g3n1uss/StringTheoryTools/blob/master/Strings.jpg)
+![Strings](Strings.jpg)
 
 *Universe of strings. Image taken from http://turbulentscientist.blogspot.com/*
 
